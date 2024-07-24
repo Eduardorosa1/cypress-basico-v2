@@ -5,4 +5,5 @@ Cypress.Commands.add('fillMandatoryFieldsAndSubmit', function () {
     cy.get('#open-text-area').type("teste")
     cy.contains('button', 'Enviar').click()
     cy.get('.success').should('be.visible')
+    
 })
